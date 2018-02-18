@@ -7,19 +7,17 @@
   "license": "MIT",
   "scripts": {
     "dev": "pm2 start --watch --interpreter babel-node lib/server.js",
-    "webpack": "webpack -wd"
+    "webpack": "webpack -wd",
+    "test": "jest --watch"
   },
   "babel": {
-    "presets": [
-      "react",
-      "env",
-      "stage-2"
-    ]
+    "presets": ["react", "env", "stage-2"]
   },
   "devDependencies": {
     "babel-eslint": "^8.2.1",
     "eslint": "^4.18.0",
     "eslint-plugin-react": "^7.6.1",
+    "jest": "^22.3.0",
     "prettier": "1.10.2"
   },
   "dependencies": {
